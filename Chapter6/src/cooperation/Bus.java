@@ -11,7 +11,13 @@ public class Bus {
 	}
 	
 	public void take(int money) { //승객을 태웠을때 
-		passengerCount ++;
 		this.money = money;
+		passengerCount ++;
+	}
+	
+	public void showInfo() {
+		
+		System.out.println("버스" + busNumber + "번의 승객은" + passengerCount +"명이고 , "
+				+ "수입은" + money+"입니다.");
 	}
 }
